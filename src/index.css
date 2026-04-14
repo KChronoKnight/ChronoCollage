@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Geist';
+  src: local('Geist');
+}
+
+:root {
+  --bg-workspace: #1a1a1a;
+  --bg-modal: #242424;
+  --bg-panel: #2a2a2a;
+  --border: #3a3a3a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+  --accent: #4db8a4;
+  --accent-hover: #3da898;
+  --grid-line: #444444;
+  --gap-fill: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-workspace);
+  color: var(--text-primary);
+  font-family: "SF Pro Display", "Segoe UI", system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
+
+/* Selection marquee */
+.marquee {
+  border: 1px solid var(--accent);
+  background: rgba(90, 98, 112, 0.08);
+  pointer-events: none;
+}
